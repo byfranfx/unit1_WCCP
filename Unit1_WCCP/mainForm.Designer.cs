@@ -49,8 +49,10 @@
             this.targetButton.Name = "targetButton";
             this.targetButton.Size = new System.Drawing.Size(100, 100);
             this.targetButton.TabIndex = 0;
+            this.targetButton.TabStop = false;
             this.targetButton.Text = "Target\r\nX = 0\r\nY = 0";
             this.targetButton.UseVisualStyleBackColor = true;
+            this.targetButton.Move += new System.EventHandler(this.targetButton_Move);
             // 
             // groupBox1
             // 
@@ -85,7 +87,7 @@
             this.targetRight.Location = new System.Drawing.Point(131, 274);
             this.targetRight.Name = "targetRight";
             this.targetRight.Size = new System.Drawing.Size(37, 37);
-            this.targetRight.TabIndex = 9;
+            this.targetRight.TabIndex = 6;
             this.targetRight.Text = "🡆";
             this.targetRight.UseVisualStyleBackColor = true;
             this.targetRight.Click += new System.EventHandler(this.targetRight_Click);
@@ -95,7 +97,7 @@
             this.targetDown.Location = new System.Drawing.Point(88, 274);
             this.targetDown.Name = "targetDown";
             this.targetDown.Size = new System.Drawing.Size(37, 37);
-            this.targetDown.TabIndex = 8;
+            this.targetDown.TabIndex = 7;
             this.targetDown.Text = "🡇";
             this.targetDown.UseVisualStyleBackColor = true;
             this.targetDown.Click += new System.EventHandler(this.targetDown_Click);
@@ -105,7 +107,7 @@
             this.TargetLeft.Location = new System.Drawing.Point(45, 274);
             this.TargetLeft.Name = "TargetLeft";
             this.TargetLeft.Size = new System.Drawing.Size(37, 37);
-            this.TargetLeft.TabIndex = 7;
+            this.TargetLeft.TabIndex = 5;
             this.TargetLeft.Text = "🡄";
             this.TargetLeft.UseVisualStyleBackColor = true;
             this.TargetLeft.Click += new System.EventHandler(this.targetLeft_Click);
@@ -115,7 +117,7 @@
             this.targetUp.Location = new System.Drawing.Point(88, 231);
             this.targetUp.Name = "targetUp";
             this.targetUp.Size = new System.Drawing.Size(37, 37);
-            this.targetUp.TabIndex = 6;
+            this.targetUp.TabIndex = 4;
             this.targetUp.Text = "🡅";
             this.targetUp.UseVisualStyleBackColor = true;
             this.targetUp.Click += new System.EventHandler(this.targetUp_Click);
@@ -125,27 +127,30 @@
             this.button3.Location = new System.Drawing.Point(16, 175);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(167, 23);
-            this.button3.TabIndex = 5;
+            this.button3.TabIndex = 3;
             this.button3.Text = "Center Target";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(16, 146);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(167, 23);
-            this.button2.TabIndex = 4;
+            this.button2.TabIndex = 2;
             this.button2.Text = "Enabled = True";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(16, 117);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(167, 23);
-            this.button1.TabIndex = 3;
+            this.button1.TabIndex = 1;
             this.button1.Text = "Visible = True";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // comboBox1
             // 
@@ -153,7 +158,7 @@
             this.comboBox1.Location = new System.Drawing.Point(16, 45);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(167, 21);
-            this.comboBox1.TabIndex = 2;
+            this.comboBox1.TabIndex = 0;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label2
@@ -164,7 +169,6 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(0, 13);
             this.label2.TabIndex = 2;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // mainForm
             // 

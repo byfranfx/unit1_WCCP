@@ -1,0 +1,8 @@
+//1. When the main form is moved, update it’s text with it’s actual location.
+//2. If the form is resized, update the formSize label text.
+//3. When the option in the ComboBox changes, update the FormBorderStyle property of the main form accordingly. Try to change the window size and see the title bar icons and button to test the behaviour for each option.
+//4. If the Visible button is clicked, toggle the Visible property of the target button and update the text of the visible button.
+//5. If the Enabled button is clicked, toggle the Enabled property of the target button and update the text of the enabled button.
+//6. If the Center button is clicked, move the target button to the center of the form. The center of the button must be in the center of the form, not the top-left corner of the button. Update the target button text.
+//7. When any of the movement buttons is clicked, move the target button 5px in the corresponding direction. Update the target button text.
+//8. When the Tab key is pressed, give the focus to the components inside the Controls GroupBox in the order ComboBox, Visible Button, Enabled Button, Center Button, Up Button, Left Button, Right Button, Down Button. The Target Button must NOT get the focus in any case. 
