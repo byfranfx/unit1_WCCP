@@ -45,13 +45,16 @@
             // 
             // targetButton
             // 
+            this.targetButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(71)))), ((int)(((byte)(111)))));
+            this.targetButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.targetButton.ForeColor = System.Drawing.Color.Snow;
             this.targetButton.Location = new System.Drawing.Point(0, 0);
             this.targetButton.Name = "targetButton";
             this.targetButton.Size = new System.Drawing.Size(100, 100);
             this.targetButton.TabIndex = 0;
             this.targetButton.TabStop = false;
             this.targetButton.Text = "Target\r\nX = 0\r\nY = 0";
-            this.targetButton.UseVisualStyleBackColor = true;
+            this.targetButton.UseVisualStyleBackColor = false;
             this.targetButton.Move += new System.EventHandler(this.targetButton_Move);
             // 
             // groupBox1
@@ -60,12 +63,13 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.targetRight);
             this.groupBox1.Controls.Add(this.targetDown);
-            this.groupBox1.Controls.Add(this.TargetLeft);
             this.groupBox1.Controls.Add(this.targetUp);
+            this.groupBox1.Controls.Add(this.TargetLeft);
             this.groupBox1.Controls.Add(this.bCenterTarget);
             this.groupBox1.Controls.Add(this.vEnabled);
             this.groupBox1.Controls.Add(this.bVisible);
             this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
             this.groupBox1.Location = new System.Drawing.Point(554, 15);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(200, 500);
@@ -84,72 +88,93 @@
             // 
             // targetRight
             // 
-            this.targetRight.Location = new System.Drawing.Point(131, 274);
+            this.targetRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(138)))), ((int)(((byte)(178)))));
+            this.targetRight.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.targetRight.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(39)))));
+            this.targetRight.Location = new System.Drawing.Point(125, 309);
             this.targetRight.Name = "targetRight";
             this.targetRight.Size = new System.Drawing.Size(37, 37);
             this.targetRight.TabIndex = 6;
             this.targetRight.Text = "🡆";
-            this.targetRight.UseVisualStyleBackColor = true;
+            this.targetRight.UseVisualStyleBackColor = false;
             this.targetRight.Click += new System.EventHandler(this.targetRight_Click);
             // 
             // targetDown
             // 
-            this.targetDown.Location = new System.Drawing.Point(88, 274);
+            this.targetDown.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(138)))), ((int)(((byte)(178)))));
+            this.targetDown.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.targetDown.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(39)))));
+            this.targetDown.Location = new System.Drawing.Point(82, 309);
             this.targetDown.Name = "targetDown";
             this.targetDown.Size = new System.Drawing.Size(37, 37);
             this.targetDown.TabIndex = 7;
             this.targetDown.Text = "🡇";
-            this.targetDown.UseVisualStyleBackColor = true;
+            this.targetDown.UseVisualStyleBackColor = false;
             this.targetDown.Click += new System.EventHandler(this.targetDown_Click);
             // 
             // TargetLeft
             // 
-            this.TargetLeft.Location = new System.Drawing.Point(45, 274);
+            this.TargetLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(138)))), ((int)(((byte)(178)))));
+            this.TargetLeft.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.TargetLeft.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(39)))));
+            this.TargetLeft.Location = new System.Drawing.Point(39, 309);
             this.TargetLeft.Name = "TargetLeft";
             this.TargetLeft.Size = new System.Drawing.Size(37, 37);
             this.TargetLeft.TabIndex = 5;
             this.TargetLeft.Text = "🡄";
-            this.TargetLeft.UseVisualStyleBackColor = true;
+            this.TargetLeft.UseVisualStyleBackColor = false;
             this.TargetLeft.Click += new System.EventHandler(this.targetLeft_Click);
             // 
             // targetUp
             // 
-            this.targetUp.Location = new System.Drawing.Point(88, 231);
+            this.targetUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(138)))), ((int)(((byte)(178)))));
+            this.targetUp.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.targetUp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(39)))));
+            this.targetUp.Location = new System.Drawing.Point(82, 266);
             this.targetUp.Name = "targetUp";
             this.targetUp.Size = new System.Drawing.Size(37, 37);
             this.targetUp.TabIndex = 4;
             this.targetUp.Text = "🡅";
-            this.targetUp.UseVisualStyleBackColor = true;
+            this.targetUp.UseVisualStyleBackColor = false;
             this.targetUp.Click += new System.EventHandler(this.targetUp_Click);
             // 
             // bCenterTarget
             // 
+            this.bCenterTarget.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(209)))), ((int)(((byte)(102)))));
+            this.bCenterTarget.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bCenterTarget.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(39)))));
             this.bCenterTarget.Location = new System.Drawing.Point(16, 175);
             this.bCenterTarget.Name = "bCenterTarget";
             this.bCenterTarget.Size = new System.Drawing.Size(167, 23);
             this.bCenterTarget.TabIndex = 3;
             this.bCenterTarget.Text = "Center Target";
-            this.bCenterTarget.UseVisualStyleBackColor = true;
+            this.bCenterTarget.UseVisualStyleBackColor = false;
             this.bCenterTarget.Click += new System.EventHandler(this.bCenterTarget_Click);
             // 
             // vEnabled
             // 
+            this.vEnabled.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(209)))), ((int)(((byte)(102)))));
+            this.vEnabled.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.vEnabled.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(39)))));
             this.vEnabled.Location = new System.Drawing.Point(16, 146);
             this.vEnabled.Name = "vEnabled";
             this.vEnabled.Size = new System.Drawing.Size(167, 23);
             this.vEnabled.TabIndex = 2;
             this.vEnabled.Text = "Enabled = True";
-            this.vEnabled.UseVisualStyleBackColor = true;
+            this.vEnabled.UseVisualStyleBackColor = false;
             this.vEnabled.Click += new System.EventHandler(this.bEnabled_Click);
             // 
             // bVisible
             // 
+            this.bVisible.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(209)))), ((int)(((byte)(102)))));
+            this.bVisible.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.bVisible.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(39)))));
             this.bVisible.Location = new System.Drawing.Point(16, 117);
             this.bVisible.Name = "bVisible";
             this.bVisible.Size = new System.Drawing.Size(167, 23);
             this.bVisible.TabIndex = 1;
             this.bVisible.Text = "Visible = True";
-            this.bVisible.UseVisualStyleBackColor = true;
+            this.bVisible.UseVisualStyleBackColor = false;
             this.bVisible.Click += new System.EventHandler(this.bVisible_Click);
             // 
             // comboBox1
@@ -165,15 +190,19 @@
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(39)))));
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(209)))), ((int)(((byte)(102)))));
             this.label2.Location = new System.Drawing.Point(12, 539);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 13);
+            this.label2.Size = new System.Drawing.Size(2, 15);
             this.label2.TabIndex = 2;
             // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(39)))));
             this.ClientSize = new System.Drawing.Size(784, 561);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
