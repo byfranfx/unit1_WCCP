@@ -18,7 +18,7 @@ namespace Unit1_WCCP
             locationTextTitle();
             resizeFormLoad();
             listItemCreate();
-            
+         
         }
       
         private void targetUp_Click(object sender, EventArgs e)
@@ -26,6 +26,7 @@ namespace Unit1_WCCP
             int x = targetButton.Location.X;
             int y = targetButton.Location.Y;
             targetButton.Location = new Point(x, y - 5);
+            Console.WriteLine("button up");
 
         }
 
@@ -34,6 +35,7 @@ namespace Unit1_WCCP
             int x = targetButton.Location.X;
             int y = targetButton.Location.Y;
             targetButton.Location = new Point(x, y + 5);
+            Console.WriteLine("button down");
         }
 
         private void targetLeft_Click(object sender, EventArgs e)
@@ -41,6 +43,7 @@ namespace Unit1_WCCP
             int x = targetButton.Location.X;
             int y = targetButton.Location.Y;
             targetButton.Location = new Point(x - 5, y);
+            Console.WriteLine("button left");
         }
 
         private void targetRight_Click(object sender, EventArgs e)
@@ -48,6 +51,7 @@ namespace Unit1_WCCP
             int x = targetButton.Location.X;
             int y = targetButton.Location.Y;
             targetButton.Location = new Point(x + 5, y);
+            Console.WriteLine("button right");
         }
 
         private void locationTextTitle()
@@ -55,6 +59,7 @@ namespace Unit1_WCCP
             String x = this.Location.X.ToString();
             String y = this.Location.Y.ToString();
             this.Text = "(" + x + ", " + y + ") Winforms Components - Common Controls";
+            Console.WriteLine("(" + x + ", " + y + ") Winforms Components - Common Controls");
         }
 
         private void mainForm_Move(object sender, EventArgs e)
@@ -68,6 +73,8 @@ namespace Unit1_WCCP
             String height = this.Size.Height.ToString();
             label2.Text = "Form size: " + width + ", " + height;
             label2.Update();
+            Console.WriteLine("Form size: " + width + ", " + height);
+
         }
 
         private void mainForm_Resize(object sender, EventArgs e)
@@ -85,6 +92,7 @@ namespace Unit1_WCCP
             comboBox1.Items.Add("Sizable");
             comboBox1.Items.Add("Fixed tool window");
             comboBox1.Items.Add("Sizable tool window");
+            Console.WriteLine("inserted item: [none, Fixed single, Fixed 3D, Fixed Dialog, Sizable, Fixed tool window, Sizable tool window]");
         }
 
         private void mainForm_Load(Object sender, EventArgs e)
@@ -135,30 +143,30 @@ namespace Unit1_WCCP
         {
             if (targetButton.Visible == false)
             {
-                button1.Text = "Visible = True";
+                Console.WriteLine("targetButton visible: true");
+                bVisible.Text = "Visible = True";
                 targetButton.Visible = true;
             } else if (targetButton.Visible == true)
             {
-                button1.Text = "Visible = False";
+                Console.WriteLine("targetButton visible: false");
+                bVisible.Text = "Visible = False";
                 targetButton.Visible = false;
             }
         }
 
 
-        private void button1_Click(object sender, EventArgs e)
+        private void bVisible_Click(object sender, EventArgs e)
         {
             targetButtonVisible();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void bCenterTarget_Click(object sender, EventArgs e)
         {
-            Console.WriteLine("button: Center target");
-
             int width = this.Size.Width / 2 - 50;
             int height = this.Size.Height / 2 - 50;
                  
             targetButton.Location = new Point(width, height);
-            Console.WriteLine("width = " + width + "\nheight = " + height + "\n");
+            Console.WriteLine("targetButton: center(" + width + ", " + height + ")");
         }
 
         private void targetbuttonEnabled()
@@ -166,31 +174,29 @@ namespace Unit1_WCCP
             if (targetButton.Enabled == false)
             {
                 targetButton.Enabled = true;
-                button2.Text = "Enabled = True";
-                Console.WriteLine("button enable: true");
+                vEnabled.Text = "Enabled = True";
+                Console.WriteLine("targetButton enable: true");
             }
             else if (targetButton.Enabled == true)
             {
                 targetButton.Enabled = false;
-                button2.Text = "Enabled = False";
-                Console.WriteLine("button enable: false");
+                vEnabled.Text = "Enabled = False";
+                Console.WriteLine("targetButton enable: false");
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void bEnabled_Click(object sender, EventArgs e)
         {
             targetbuttonEnabled();
         }
 
         private void targetButton_Move(object sender, EventArgs e)
         {
-            Console.WriteLine("button: Center target");
-
             int x = targetButton.Location.X;
             int y = targetButton.Location.Y;
 
             targetButton.Text = "Target\nX = " + x + "\nY = " + y;
-            Console.WriteLine("width = " + x + "\nheight = " + y + "\n");
+            Console.Write("targetButton: (" + x + ",  " + y + ") : ");
         }
     }
 }

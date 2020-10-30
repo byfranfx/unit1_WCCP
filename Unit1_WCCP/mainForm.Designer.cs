@@ -35,9 +35,9 @@
             this.targetDown = new System.Windows.Forms.Button();
             this.TargetLeft = new System.Windows.Forms.Button();
             this.targetUp = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.bCenterTarget = new System.Windows.Forms.Button();
+            this.vEnabled = new System.Windows.Forms.Button();
+            this.bVisible = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
@@ -62,9 +62,9 @@
             this.groupBox1.Controls.Add(this.targetDown);
             this.groupBox1.Controls.Add(this.TargetLeft);
             this.groupBox1.Controls.Add(this.targetUp);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.bCenterTarget);
+            this.groupBox1.Controls.Add(this.vEnabled);
+            this.groupBox1.Controls.Add(this.bVisible);
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Location = new System.Drawing.Point(554, 15);
             this.groupBox1.Name = "groupBox1";
@@ -122,35 +122,35 @@
             this.targetUp.UseVisualStyleBackColor = true;
             this.targetUp.Click += new System.EventHandler(this.targetUp_Click);
             // 
-            // button3
+            // bCenterTarget
             // 
-            this.button3.Location = new System.Drawing.Point(16, 175);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(167, 23);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Center Target";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.bCenterTarget.Location = new System.Drawing.Point(16, 175);
+            this.bCenterTarget.Name = "bCenterTarget";
+            this.bCenterTarget.Size = new System.Drawing.Size(167, 23);
+            this.bCenterTarget.TabIndex = 3;
+            this.bCenterTarget.Text = "Center Target";
+            this.bCenterTarget.UseVisualStyleBackColor = true;
+            this.bCenterTarget.Click += new System.EventHandler(this.bCenterTarget_Click);
             // 
-            // button2
+            // vEnabled
             // 
-            this.button2.Location = new System.Drawing.Point(16, 146);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(167, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Enabled = True";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.vEnabled.Location = new System.Drawing.Point(16, 146);
+            this.vEnabled.Name = "vEnabled";
+            this.vEnabled.Size = new System.Drawing.Size(167, 23);
+            this.vEnabled.TabIndex = 2;
+            this.vEnabled.Text = "Enabled = True";
+            this.vEnabled.UseVisualStyleBackColor = true;
+            this.vEnabled.Click += new System.EventHandler(this.bEnabled_Click);
             // 
-            // button1
+            // bVisible
             // 
-            this.button1.Location = new System.Drawing.Point(16, 117);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(167, 23);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Visible = True";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.bVisible.Location = new System.Drawing.Point(16, 117);
+            this.bVisible.Name = "bVisible";
+            this.bVisible.Size = new System.Drawing.Size(167, 23);
+            this.bVisible.TabIndex = 1;
+            this.bVisible.Text = "Visible = True";
+            this.bVisible.UseVisualStyleBackColor = true;
+            this.bVisible.Click += new System.EventHandler(this.bVisible_Click);
             // 
             // comboBox1
             // 
@@ -198,9 +198,9 @@
         private System.Windows.Forms.Button targetDown;
         private System.Windows.Forms.Button TargetLeft;
         private System.Windows.Forms.Button targetUp;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button bCenterTarget;
+        private System.Windows.Forms.Button vEnabled;
+        private System.Windows.Forms.Button bVisible;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label2;
     }
